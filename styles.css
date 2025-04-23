@@ -18,4 +18,38 @@ body {
   input:active {
     font-size: xx-large;
   }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
   
+/* Flexbox-related properties */
+#agenda, #unfinished, #new, #attendance {
+  flex: 1 1 30%;
+  border: 1px solid hsl(210, 35%, 65%);
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#media, #form {
+  padding: 1rem;
+  border: 1px solid #00ff2a;
+}
+
+
+.formatted-img {
+  width: 100%;              /* Responsive width */
+  max-width: 500px;         /* Limits image size */
+  height: auto;
+  border-radius: 12px;      /* Rounded corners */
+  display: block;           /* Removes inline spacing */
+  margin: 1rem auto;        /* Centers image */
+}

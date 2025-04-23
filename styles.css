@@ -45,12 +45,14 @@ body {
   border-color: greenyellow;
   border-width: 3px;
   border-radius: 3px;
+  display: inline;
 }
 
 
 .formatted-img {
   width: 100%;              /* Responsive width */
   max-width: 500px;         /* Limits image size */
+  min-width: 10px;
   height: auto;
   border-radius: 12px;      /* Rounded corners */
   display: block;           /* Removes inline spacing */

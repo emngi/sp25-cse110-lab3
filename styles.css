@@ -12,7 +12,7 @@ body {
 
   nav a:hover {
     color: color-mix(in srgb, rgb(85, 178, 225) 40%, rgb(90, 211, 255) 60%);
-    font-size: 18px;
+    font-size: 18px; /*Absolute */
   }
 
   input:active {
@@ -29,7 +29,7 @@ body {
 /* Flexbox-related properties */
 #agenda, #unfinished, #new, #attendance {
   flex: 1 1 30%;
-  border: 1px solid hsl(210, 35%, 65%);
+  border: 1px solid hsl(210, 35%, 65%); /*Absolute */
   padding: 1rem;
 }
 
@@ -43,8 +43,8 @@ body {
   padding: 1rem;
   border-style: dashed;
   border-color: greenyellow;
-  border-width: 3px;
-  border-radius: 3px;
+  border-width: 3px; /*Absolute */
+  border-radius: 3px; /*Absolute */
   display: inline;
 }
 

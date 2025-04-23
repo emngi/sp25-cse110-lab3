@@ -14,6 +14,15 @@ body {
     padding-left: 2rem; /* Relative */
     max-width: 80ch; /* Relative */
     text-align: left;
+    
+    /* Margin - shorthand */
+    margin: 2rem 3rem 2rem 3rem;
+
+    /* Margin - longhand */
+    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
   }
 
   nav a:hover {
@@ -38,6 +47,15 @@ body {
   border: 1px solid hsl(210, 35%, 65%); /*Absolute */
   padding: 1rem;
   position: relative;
+
+  /* Padding - shorthand */
+  padding: 1rem 2rem;
+
+  /* Padding - longhand */
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .grid-container {

@@ -4,42 +4,70 @@
   --body-font: "Forma DJR Text", "Georgia", serif;
 }
 
+* {
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'forma-djr-text', sans-serif;
-    font-size: 16px; /* Absolute */
-    line-height: 1.5em; /* Relative */
-    color: var(--text-color, rgb(247, 254, 255));
-    background-color: var(--primary-color, #041330);
-    margin: 0 auto;
-    padding-left: 2rem; /* Relative */
-    max-width: 80ch; /* Relative */
-    text-align: left;
+  font-family: 'forma-djr-text', sans-serif;
+  font-size: 16px; /* Absolute */
+  line-height: 1.5em; /* Relative */
+  color: var(--text-color, rgb(247, 254, 255));
+  background-color: var(--primary-color, #041330);
+  margin: 0 auto;
+  padding-left: 2rem; /* Relative */
+  max-width: 80ch; /* Relative */
+  text-align: left;
 
-    /* Margin - shorthand */
-    margin: 2rem 3rem 2rem 3rem;
+  /* Margin - shorthand */
+  margin: 2rem 3rem 2rem 3rem;
 
-    /* Margin - longhand */
-    margin-top: 2rem;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
+  /* Margin - longhand */
+  margin-top: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+h1, h2, h3 {
+  color: dodgerblue;
+
+}
+h2 ~ p {
+  color: blanchedalmond;
+}
+
+h2 + p {
+  color:  pink;
+}
+
+ul > li {
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: color-mix(in srgb, rgb(85, 178, 225) 40%, rgb(90, 211, 255) 60%);
+  font-size: 18px; /*Absolute */
+}
+
+input:active {
+  font-size: xx-large;
+}
+
+nav:has(li) {
+  background-color: rgb(255, 255, 254);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  section {
+    flex: 1 1 30%;
   }
-
-  nav a:hover {
-    color: color-mix(in srgb, rgb(85, 178, 225) 40%, rgb(90, 211, 255) 60%);
-    font-size: 18px; /*Absolute */
-  }
-
-  input:active {
-    font-size: xx-large;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-  }
+}
   
 /* Flexbox-related properties */
 #agenda, #unfinished, #new, #attendance {
@@ -77,6 +105,9 @@ body {
   position:sticky;
 }
 
+input[type="text"] {
+  border: 2px solid greenyellow;
+}
 
 .formatted-img {
   width: 100%;              /* Responsive width */

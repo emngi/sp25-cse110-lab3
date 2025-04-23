@@ -31,6 +31,7 @@ body {
   flex: 1 1 30%;
   border: 1px solid hsl(210, 35%, 65%); /*Absolute */
   padding: 1rem;
+  position: relative;
 }
 
 .grid-container {
@@ -46,6 +47,10 @@ body {
   border-width: 3px; /*Absolute */
   border-radius: 3px; /*Absolute */
   display: inline;
+}
+
+#form{
+  position:sticky;
 }
 
 

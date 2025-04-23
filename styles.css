@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color: #041330;
+  --heading-font: "Manifold CF", "Arial", sans-serif;
+  --body-font: "Forma DJR Text", "Georgia", serif;
+}
+
 body {
     font-family: 'forma-djr-text', sans-serif;
     font-size: 16px; /* Absolute */

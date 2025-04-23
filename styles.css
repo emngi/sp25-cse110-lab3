@@ -41,7 +41,10 @@ body {
 
 #media{
   padding: 1rem;
-  border: 1px solid #00ff2a;
+  border-style: dashed;
+  border-color: greenyellow;
+  border-width: 3px;
+  border-radius: 3px;
 }
 
 

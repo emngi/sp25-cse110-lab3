@@ -1,0 +1,222 @@
+/* ======= General Setup ======= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: color(display-p3 0.2 0.6 0.3);
+  --secondary-color: hsl(200, 80%, 50%);
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'forma-djr-text', sans-serif;
+  font-size: 16px; /* Absolute */
+  line-height: 1.5em; /* Relative */
+  color: var(--text-color, black);
+  background-color: var(--primary-color, rgb(240, 240, 240));
+  margin: 0 auto;
+  padding: 2rem; /* Relative */
+  max-width: 80ch; /* Relative */
+}
+
+/* ======= Header & Footer ======= */
+
+header {
+  background-color: rgba(255, 140, 0, 0.8); /* RGBA */
+  color: white;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  background-color: hsl(240, 60%, 30%);
+  color: white;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* ======= Typography & Text ======= */
+
+h1, h2, h3 {
+  color: #007BFF; /* Hex */
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+form label {
+  font-style: italic;
+}
+
+h2 + p {
+  font-size: 1.1em;
+}
+
+/* ======= Navigation ======= */
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: color-mix(in srgb, red 40%, blue 60%);
+}
+
+/* ======= Section Styling ======= */
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10pt; /* Absolute */
+}
+
+.section-highlight {
+  background-color: lightyellow;
+}
+
+#attendance {
+  border-left: 5px solid gray;
+}
+
+/* ======= Media Section ======= */
+
+#media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+img {
+  width: 300px; /* Absolute */
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  min-width: 200px;
+  width: 400px;
+  height: auto;
+}
+
+audio {
+  position: relative;
+  left: 10px;
+}
+
+/* ======= Forms ======= */
+
+fieldset {
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+}
+
+input:active {
+  border-color: red;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Highlight form when textarea focused using :has() */
+form:has(textarea:focus) {
+  border: 2px solid orange;
+}
+
+/* ======= Selectors & Combinators ======= */
+
+/* Class */
+.section-highlight {
+  background-color: lightyellow;
+}
+
+/* ID already done: #attendance */
+
+/* Universal already done: * */
+
+/* Element already done: p, h1, h2, h3 */
+
+/* Attribute selector already done: input[type="text"] */
+
+/* Selector list already done: h1, h2, h3 */
+
+/* Descendant already done: form label */
+
+/* Child */
+nav > ul {
+  margin: 0;
+}
+
+/* General sibling */
+h2 ~ ul {
+  list-style-type: square;
+}
+
+/* Adjacent sibling already done: h2 + p */
+
+/* Combined selector */
+input#name {
+  background-color: #f0f0f0;
+}
+
+/* Nested (modern syntax, requires PostCSS or native browser support) */
+nav {
+  & ul {
+    list-style: none;
+
+    & li {
+      margin: 0.5rem;
+
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* ======= Responsive Design ======= */
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  video {
+    width: 100%;
+  }
+}

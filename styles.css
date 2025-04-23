@@ -14,7 +14,7 @@ body {
     padding-left: 2rem; /* Relative */
     max-width: 80ch; /* Relative */
     text-align: left;
-    
+
     /* Margin - shorthand */
     margin: 2rem 3rem 2rem 3rem;
 
@@ -86,4 +86,25 @@ body {
   border-radius: 12px;      /* Rounded corners */
   display: block;           /* Removes inline spacing */
   margin: 1rem auto;        /* Centers image */
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  form {
+    width: 90%;
+  }
 }

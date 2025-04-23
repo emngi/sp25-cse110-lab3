@@ -49,7 +49,7 @@ ul > li {
 }
 
 nav a:hover {
-  color: color-mix(in srgb, blue 90%, white 10%);
+  color: color-mix(in srgb, aqua 90%, white 10%);
   font-size: 18px; /*Absolute */
 }
 
@@ -59,15 +59,17 @@ input:active {
 
 nav:has(li) {
   background-color: rgb(255, 255, 254);
+
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  #agenda {
-    flex: 1 1 30%;
+  #agenda {  
+    color: hotpink;
   }
 }
+
   
 /* Flexbox-related properties */
 #agenda, #unfinished, #new, #attendance {

@@ -5,8 +5,8 @@
 }
 
 * {
-  margin: 1;
-  padding: 1;
+  margin: 1px;
+  padding: 1px;
   box-sizing: border-box;
 }
 
@@ -49,7 +49,7 @@ ul > li {
 }
 
 nav a:hover {
-  color: color-mix(in srgb, rgb(85, 178, 225) 40%, rgb(90, 211, 255) 60%);
+  color: color-mix(in srgb, blue 90%, white 10%);
   font-size: 18px; /*Absolute */
 }
 
@@ -64,7 +64,7 @@ nav:has(li) {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  section {
+  #agenda {
     flex: 1 1 30%;
   }
 }
